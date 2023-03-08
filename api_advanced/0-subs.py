@@ -13,8 +13,12 @@ def number_of_subcribers(subreddit):
 
     if response.status_code == 200:
         json_data = response.json()
-        subscriber_number = json_data.get('data').get(
-            'children')[0].get('data').get('subreddit_subscribers')
+        subscriber_number = (
+            json_data.get('data')
+            .get('children')[0]
+            .get('data')
+            .get('subreddit_subscribers')
+        )
         return subscriber_number
     else:
         return 0
