@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for count_words function"""
+"""Script of a python module for count_words function"""
 
 import json
 import requests
