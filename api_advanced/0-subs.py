@@ -7,7 +7,7 @@ def number_of_subscribers(subreddit):
     """Return number of subscribers is @subreddit is valid subreddit.
     if not return 0."""
 
-    headers = {'User-Agent': 'MyAPI/0.0.1'}
+    headers = {'User-Agent': 'm_tenyg'}
     subreddit_url = "https://reddit.com/r/{}.json".format(subreddit)
     response = requests.get(subreddit_url, headers=headers)
 
