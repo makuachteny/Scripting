@@ -7,7 +7,7 @@ import requests
 def number_of_subcribers(subreddit):
     """Set the HTTP headers for the request to the Reddit API"""
 
-    headers = {'User-Agent': 'Scrapping_subscribers '}
+    headers = {'User-Agent': 'm_tenyg'}
     subreddit_url = "https://reddit.com/r/{}.json".format(subreddit)
     response = requests.get(subreddit_url, headers=headers)
 
